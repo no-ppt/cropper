@@ -31,10 +31,16 @@
         maxHeight = minTop + min(container.height, canvas.top + canvas.height);
       }
 
+      //TODO merge by alexLin for no-ppt(canvasScale)
       range = {
-        x: this.endX - this.startX,
-        y: this.endY - this.startY
+        x: (this.endX - this.startX)/options.canvasScale,
+        y: (this.endY - this.startY)/options.canvasScale
       };
+
+      //range = {
+      //  x: this.endX - this.startX,
+      //  y: this.endY - this.startY
+      //};
 
       if (aspectRatio) {
         range.X = range.y * aspectRatio;

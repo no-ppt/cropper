@@ -421,8 +421,9 @@
         cropBox.top = cropBox.oldTop;
       }
 
-      cropBox.width = min(max(cropBox.width, cropBox.minWidth), cropBox.maxWidth);
-      cropBox.height = min(max(cropBox.height, cropBox.minHeight), cropBox.maxHeight);
+      //TODO 如果为竖图，影响setCropBoxData
+      //cropBox.width = min(max(cropBox.width, cropBox.minWidth), cropBox.maxWidth);
+      //cropBox.height = min(max(cropBox.height, cropBox.minHeight), cropBox.maxHeight);
 
       this.limitCropBox(false, true);
 
