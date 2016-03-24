@@ -428,8 +428,8 @@
       this.limitCropBox(false, true);
 
       //TODO: 去除剪裁canvas大小判断，否则800*600（或其他比例）剪裁时位移
-      //cropBox.oldLeft = cropBox.left = min(max(cropBox.left, cropBox.minLeft), cropBox.maxLeft);
-      //cropBox.oldTop = cropBox.top = min(max(cropBox.top, cropBox.minTop), cropBox.maxTop);
+      cropBox.oldLeft = cropBox.left = min(max(cropBox.left, cropBox.minLeft), cropBox.maxLeft);
+      cropBox.oldTop = cropBox.top = min(max(cropBox.top, cropBox.minTop), cropBox.maxTop);
 
       if (options.movable && options.cropBoxMovable) {
 
